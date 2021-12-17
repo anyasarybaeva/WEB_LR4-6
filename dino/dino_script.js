@@ -8,7 +8,7 @@ const text=document.getElementById("text")
 
 let points=0;
 text.textContent=points;
-exit.addEventListener('click', () => window.open('index.html'));
+exit.addEventListener('click', () => window.open('../index.html'));
 start.addEventListener('click', () =>{
     cactus.classList.add("move")
     var startTime=Date.now();
