@@ -4,15 +4,16 @@ const exit=document.getElementById("exit");
 const start=document.getElementById("start")
 const pause=document.getElementById("pause")
 const text=document.getElementById("text")
-
-
 let points=0;
+let game=false
 text.textContent=points;
 exit.addEventListener('click', () => window.open('../index.html'));
 start.addEventListener('click', () =>{
-    cactus.classList.add("move")
-    var startTime=Date.now();
-    
+    if (game==false)
+    {
+        cactus.classList.add("move")
+        game=true
+    } 
 });
 
 document.addEventListener("keydown",function(event){
@@ -22,8 +23,8 @@ document.addEventListener("keydown",function(event){
     }
 });
 let isPoint = setInterval(function() {
-    let cactusleft=parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
-    text.textContent=points++;
+    if(game)
+        text.textContent=points++;
 },1500)
 function jump()
 {
@@ -40,16 +41,11 @@ function jump()
 let isAlive = setInterval(function() {
     let dinotop=parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
     let cactusleft=parseInt(window.getComputedStyle(cactus).getPropertyValue("left")); 
-    if(cactusleft<50 && cactusleft>0 && dinotop>=100)
+    if(cactusleft<50 && cactusleft>0 && dinotop>=70)
     {
         alert("game over")
         points=0;
-    }
-
-    if(1495>=(Date.now()-startTime)>=1510 )
-    {
-        text.textContent=points++;
-        start=Date.now()
+        game=false
     }
 },15)
 

@@ -50,7 +50,7 @@ h1
     background-image: url(../img/dino.png);
     background-size: 50px 50px;
     position: relative;
-    top: 110px;
+    top: 80px;
     left: 0px;
 }
 #cactus{
@@ -59,7 +59,7 @@ h1
     background-image: url(../img/cactus.png);
     background-size: 40px 40px;
     position: relative;
-    top: 70px;
+    top: 40px;
     left: 550px;
 }
 #text{
