@@ -23,8 +23,10 @@ document.addEventListener("keydown",function(event){
     }
 });
 let isPoint = setInterval(function() {
-    if(game)
+    if(cactus.classList=="move")
+    {
         text.textContent=points++;
+    }
 },1500)
 function jump()
 {
@@ -43,9 +45,10 @@ let isAlive = setInterval(function() {
     let cactusleft=parseInt(window.getComputedStyle(cactus).getPropertyValue("left")); 
     if(cactusleft<50 && cactusleft>0 && dinotop>=70)
     {
-        alert("game over")
         points=0;
         game=false
+        text.textContent="Game over"
+        cactus.classList.remove("move");
     }
 },15)
 

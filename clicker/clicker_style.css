@@ -91,4 +91,54 @@ main {
     width: 600px;
     height: 300px;
     margin: auto;
+    
 }
+#exit{
+
+    width: 200px;
+    height: 50px;
+    margin-left: 200px;
+    --color: grey;
+    --border-color: rgb(92, 89, 89);
+    --shadow-color: rgb(53, 50, 50);
+
+
+ 
+    border: none;
+    background-size: cover;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-family: 'Press Start 2P', monospace;
+    font-weight: bold;
+    background-color: var(--color);
+    box-shadow: 0 -3px var(--color),
+                3px 0 var(--color),
+                0 3px var(--color),
+                -3px 0 var(--color),
+                0 -6px var(--border-color),
+                3px -3px var(--border-color),
+                6px 0 var(--border-color),
+                0 6px var(--border-color),
+                -3px 3px var(--border-color),
+                -6px 0 var(--border-color),
+                -3px -3px var(--border-color),
+                3px 3px var(--border-color),
+                0px 9px var(--shadow-color),
+                3px 6px var(--shadow-color),
+                6px 3px var(--shadow-color),
+                0px 9px var(--shadow-color),
+                -3px 6px var(--shadow-color),
+                -6px 3px var(--shadow-color);
+}
+
+b{
+    text-align: center;
+    font-size: .40rem;
+    color: grey;
+    margin-left: 250px;
+    font-family: 'Press Start 2P', monospace;
+    font-weight: bold;
+    justify-content: center;
+  
+  };

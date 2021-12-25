@@ -37,7 +37,6 @@ start.addEventListener('click', () =>{
     inGame=true;
     init();
 });
-
 function init() {
     
     canvas = document.getElementById('myCanvas');

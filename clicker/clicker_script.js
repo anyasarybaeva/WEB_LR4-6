@@ -5,7 +5,9 @@ const TIMEOUT=5000;
 const display=document.getElementById("display");
 const button=document.getElementById("button");
 const counter=document.getElementById("counter");
+const exit=document.getElementById("exit");
 
+exit.addEventListener('click', () => window.open('../index.html'));
 button.onclick=start;
 
 function start() {

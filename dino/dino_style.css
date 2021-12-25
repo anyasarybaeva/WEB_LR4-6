@@ -158,3 +158,15 @@ button {
                 -3px 6px var(--shadow-color),
                 -6px 3px var(--shadow-color);
 }
+
+a{
+    text-align: center;
+    font-size: .40rem;
+    color: grey;
+    margin-left: 250px;
+    font-family: 'Press Start 2P', monospace;
+    font-weight: bold;
+    justify-content: center;
+  
+  };
+  
