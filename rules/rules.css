@@ -29,9 +29,9 @@ body {
 }
 
 button {
-    --color: rgb(34, 178, 94);
-    --border-color: rgb(34, 178, 94);
-    --shadow-color: rgb(20, 112, 58);
+    --color: rgb(212, 40, 198);
+    --border-color: rgb(168, 42, 168);
+    --shadow-color: rgb(112, 20, 89);
     position: relative;
     font-size: .75rem;
     width: 200px;
